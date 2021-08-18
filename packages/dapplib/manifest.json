@@ -1,0 +1,14 @@
+{
+    "repository": {},
+    "__outputFolder": null,
+    "blocks": [
+        {
+            "category": "examples",
+            "name": "core-hello_dev",
+            "parameters": {}
+        }
+    ],
+    "blockchain": "solana",
+    "language": "rust",
+    "framework": "react"
+}
