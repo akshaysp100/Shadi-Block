@@ -1,4 +1,70 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+  margin: 0;
+  
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #dc9afe;
+  /* background-image: url(../pages/2090.jpg); */
+  
+  
+}
+
+#imageid{
+  padding-top: 3px;
+}
+
+#text1{
+  color: #ea80fc;
+}
+
+#div2{
+  
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+#div1{
+  
+  height: 100vh;
+  width: 100%;
+}
+
+select {
+  text-align: center;
+}
+#formdiv{
+  background-image: url("./form_image.jpg");
+}
+
+.submitdiv {
+  text-align: center;
+  
+}
+
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2b2a33;
+  clip-path: circle(600px at left);
+
+}
+
+#howdiv1{
+  text-align: center;
+  align-items: center;
+  
+}
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
 
 @import "tailwindcss/base";
@@ -242,4 +308,4 @@ main {
 
 svg[data-copy] {
   display: inline-block;
-}
+} */
