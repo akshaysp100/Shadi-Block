@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './components/top-navigation';
 import './components/page-loader';
-import Landing from './pages/dapp';
 
 import {Route, Switch} from 'react-router-dom';
 
@@ -25,7 +24,6 @@ class App extends Component {
             <Route path="/register" component={Register}/>
             <Route exact path="/certificate"component={Certificate}/>
             <Route component={Error}/>
-            
           </Switch>
 
         {/* <switch> */}

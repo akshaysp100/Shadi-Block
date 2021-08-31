@@ -3,12 +3,13 @@ body{
   
   font-size: 1rem;
   font-weight: 400;
+  font-family: 'Berkshire Swash', cursive;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #dc9afe;
+  /*background-image: linear-gradient(to top right,#e065ff,#e065ff,#dd9afe);*/
   /* background-image: url(../pages/2090.jpg); */
-  
+  background-color: #ffffff;
   
 }
 
@@ -37,6 +38,7 @@ body{
 select {
   text-align: center;
 }
+
 #formdiv{
   background-image: url("./form_image.jpg");
 }

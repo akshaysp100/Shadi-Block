@@ -9,7 +9,7 @@ export default class TopNavigation extends Component {
       <div class="navbar-fixed">
         
         <nav class="N/A transparent ">
-          <div >
+          <div style={{color:"black"}}>
             <a href="/" class="brand-logo"> &nbsp;&nbsp;&nbsp;Shadiblock</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="/">Home</a></li>

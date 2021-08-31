@@ -7,10 +7,8 @@ const Register = () => {
     return (
         <div className="flexible-content">
             <TopNavigation />
-            <Form />
-            
+            <Form />    
         </div>
-
     );
 };
 
