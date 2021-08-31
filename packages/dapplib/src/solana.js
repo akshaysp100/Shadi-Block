@@ -103,7 +103,7 @@ class Solana {
         // Calculate the cost to fund all state accounts
         for(let l=0; l<dataLayouts.length; l++) {
             fees += await self.connection.getMinimumBalanceForRentExemption(
-                dataLayouts[l].span,
+                dataLayouts[l].layout.span,
               );      
         }
     
@@ -127,7 +127,7 @@ class Solana {
                 lamports: await self.getAccountBalance(payerAccount.publicKey)
             }
         };
-
+        console.log("Pass1")
         let programAccount = new Account();
         await BpfLoader.load(
                                 self.connection,
@@ -136,7 +136,10 @@ class Solana {
                                 program,
                                 BPF_LOADER_PROGRAM_ID,
                             );
+                            
         let programId = programAccount.publicKey;
+
+        console.log("Pass2")
 
         // Create all the state accounts
         let transactionAccounts = [ payerAccount ];
@@ -144,7 +147,7 @@ class Solana {
         for(let l=0; l<dataLayouts.length; l++) {
             let stateAccount = new Account();
             transactionAccounts.push(stateAccount);
-            let space = dataLayouts[l].layout.span;
+            let space = dataLayouts[l].layout.span + 244;
             let lamports = await self.connection.getMinimumBalanceForRentExemption(
               dataLayouts[l].layout.span,
             );
@@ -164,6 +167,8 @@ class Solana {
                             lamports
             }          
         }
+
+        console.log("Pass3")
 
         await sendAndConfirmTransaction(
             self.connection,
@@ -188,7 +193,7 @@ class Solana {
                                             programId: options.programId,
                                             data: options.data
                                         });
-
+         console.log("sol");                               
         return await sendAndConfirmTransaction(
             self.connection,
             new Transaction().add(instruction),

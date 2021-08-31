@@ -18,12 +18,14 @@
         "clean": "rimraf -rf build && rimraf -rf dist",
         "deploy": "node src/scripts/deploy.js",
         "dev": "watch \"node src/scripts/deploy.js\" programs/src",
-        "test": "npm run test"
+        "test": "npm run test",
+        "test:program": "cargo test --manifest-path=./programs/Cargo.toml"
     },
     "bugs": {
         "url": "https://github.com/trycrypto/dappstarter-lerna/issues"
     },
     "dependencies": {
+        "borsh": "^0.6.0",
         "clipboard": "^2.0.6"
     },
     "devDependencies": {

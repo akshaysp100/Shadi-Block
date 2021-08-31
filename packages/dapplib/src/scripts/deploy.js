@@ -93,7 +93,10 @@ const { setUncaughtExceptionCaptureCallback } = require("process");
       `\n\n\⚙️  Deploying program to blockchain...\n\n`
     );
 
-    let result = await solana.deployProgram(program, accountDataLayouts);
+    let result = await solana.deployProgram(program, accountDataLayouts)
+    .then((res) => res)
+    .catch((err) => console.log("Akshay S P message "+err));
+    
 
     console.log(
       `\n\n\💰 Payer account ${result.programAccounts[PAYER].publicKey} created with ${result.programAccounts[PAYER].lamports } lamports for fees.\n\n`

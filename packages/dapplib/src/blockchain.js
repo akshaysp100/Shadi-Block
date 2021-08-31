@@ -1,5 +1,7 @@
 const { Solana } = require('./solana');
 const bs58 = require('bs58');
+const { struct } = require('buffer-layout');
+
 
 module.exports = class Blockchain {
 
@@ -15,16 +17,24 @@ module.exports = class Blockchain {
 
         let accountInfo = await solana.getAccountInfo(account.publicKey); // Convert from base58
         let layoutItem = Solana.getDataLayouts().filter((item) => { return item.name === accountName });
-        let layout = layoutItem.length > 0 ? layoutItem[0].layout : null;        
+        let layout = layoutItem.length > 0 ? layoutItem[0].layout : null;
         let resultData = null;
 
-        if (accountInfo && layout) {
-            resultData = layout.decode(Buffer.from(accountInfo.data));
+        let accda = accountInfo.data
+        let chunks = [], i = 8, n = accda.length, len = 74;
+        chunks.push(accda.slice(i, i += 74));
+        while (i < n) {
+            chunks.push(accda.slice(i, i += len));
         }
+
+        if (accountInfo && layout) {
+            resultData = layout.decode(accountInfo.data);
+        }
+
 
         return {
             callAccount: account.publicKey,
-            callData: resultData
+            callData: chunks
         }
     }
 
@@ -33,13 +43,13 @@ module.exports = class Blockchain {
      */
     static async put(env, accountName, data) {
         let solana = new Solana(env.config);
-        // Payer privateKey is hardcoded for Beta
+
         let txReceipt = await solana.submitTransaction({
-                                    keys: [{pubkey: Solana.getPublicKey(env.config.programInfo.programAccounts[accountName].publicKey), isSigner: false, isWritable: true}],
-                                    payer: Solana.getSigningAccount(bs58.decode(env.config.programInfo.programAccounts['payer'].privateKey)),
-                                    programId: Solana.getPublicKey(env.config.programInfo.programId),
-                                    data
-                                });
+            keys: [{ pubkey: Solana.getPublicKey(env.config.programInfo.programAccounts[accountName].publicKey), isSigner: false, isWritable: true }],
+            payer: Solana.getSigningAccount(bs58.decode(env.config.programInfo.programAccounts['payer'].privateKey)),
+            programId: Solana.getPublicKey(env.config.programInfo.programId),
+            data
+        });
 
         let network = env.config.httpUri.indexOf('devnet') ? 'devnet' : 'mainnet';
         return {
@@ -53,5 +63,5 @@ module.exports = class Blockchain {
      */
     static async post(env, tx, args) {
         return 'Not implemented';
-    } 
+    }
 }
