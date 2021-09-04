@@ -7,17 +7,26 @@ import Footer from "../components/footer";
 export default class Landing extends Component {
   render() {
     return (
-      <div>
+      <div >
 
-        <TopNavigation />
+        <section className="mehk">
+          <TopNavigation />
 
-        <Mainview1 />
+          <Mainview1 />
 
 
-        <Mainview2 />
+          <Mainview2 />
+        </section>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+
 
         <Footer />
-        
+
 
       </div>
 

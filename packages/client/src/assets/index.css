@@ -9,7 +9,15 @@ body{
   text-align: left;
   /*background-image: linear-gradient(to top right,#e065ff,#e065ff,#dd9afe);*/
   /* background-image: url(../pages/2090.jpg); */
-  background-color: #ffffff;
+  
+
+  margin: 0;
+  position: relative;
+
+  background-image: url(./video.gif);
+  background-position: -260px 950px;
+  background-attachment: fixed;
+  
   
 }
 
@@ -48,21 +56,91 @@ select {
   
 }
 
-.circle{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #2b2a33;
-  clip-path: circle(600px at left);
-
-}
 
 #howdiv1{
   text-align: center;
   align-items: center;
   
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+#imageid{
+  padding-top: 3px;
+  position: fixed;
+  margin-left: 1000px;
+  margin-top: 300px;
+}
+
+#text1{
+  color: #ea80fc;
+}
+
+#div2{
+  
+  /* height: 100vh; */
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+}
+.mehk{
+  
+    min-height: 100vh; /* minus the height of the footer */
+}
+
+.footerdiv{
+  
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1580px;
+  width: 100%;
+  }
+
+#maintext2{
+  text-align: left;
+}
+
+#div1{
+  
+  /* height: 100vh; */
+  width: 100%;
+}
+
+select {
+  text-align: center;
+}
+/* #formdiv{
+  background-image: url("./form_image.jpg");
+} */
+
+.submitdiv {
+  text-align: center;
+  
+}
+
+
+
+#howdiv1{
+  text-align: center;
+  align-items: center;
+  
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+}
+
+.card{
+  background-image: linear-gradient(rgb(255, 0, 0),rgb(255, 0, 242));
 }
 
 

@@ -1,34 +1,59 @@
 import React, { Component } from "react";
-import Image from "../assets/2090.jpg"
+import { Link } from "react-router-dom";
+import Slide from "react-reveal/Slide"
+
 
 export default class Mainview1 extends Component {
   render() {
     return (
-      <div>
-        
-
+      <div className="container" style={{ "marginLeft": "30px", "marginTop": "60px", "fontSize": "22px", }}>
         <div class="row" id="div1">
+          <Slide left cascade>
+            <div>
+              <div class="col s6 white-text" id="text1">
+                <h1>Welcome to ShadiBlock  Solanas BlockChain for Lovers</h1>
+                <h5 style={{ "fontSize": "36px" }}>A one-stop destination to Carve your names on the BlockChain forever!!!</h5>
+                <div class="col s12">
+                  <div class="row"></div>
+                  <div class="row"></div>
+                  <div class="col s6">
+                    <Link
+                      to="/register"
+                      style={{
+                        width: "140px",
+                        borderRadius: "10px",
+                        letterSpacing: "1.5px",
+                        width: "50%",
+                        margin: "6px 6px",
+                        fontFamily: "sans-serif"
+                      }}
+                      className="btn btn-large waves-effect waves-light hoverable red"
+                    >
+                      Register
+                    </Link>
+                  </div>
 
-          <div class="col s6 white-text" id="text1">
-            <h1>WELCOME to the world of Shadiblock powered by SOLANA Blockchain</h1>
-            <h5>show your love to your loved one's Register NOW!!!</h5>
-            <div class="col s12">
-
-              <div class="col s6">
-                <a href="/register" class="waves-effect waves-light btn light-blue darken-3">Register</a>
-              </div>
-              <div class="col s6">
-                <a href="/blockchain" class="waves-effect waves-light btn light-blue darken-3">View Blockchain</a>
+                  <div class="col s6">
+                    <Link
+                      to="/blockChain"
+                      style={{
+                        width: "140px",
+                        borderRadius: "10px",
+                        letterSpacing: "1.5px",
+                        width: "50%",
+                        margin: "6px 6px",
+                        fontFamily: "sans-serif"
+                      }}
+                      className="btn btn-large waves-effect waves-light hoverable red"
+                    >
+                      BlockChain
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-
-          </div>
-
-          <div class="col s6" id="imageid">
-            <img src={Image} height="550" width="auto"/>
-          </div>
+          </Slide>
         </div>
-
       </div>
 
     );

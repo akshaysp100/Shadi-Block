@@ -54,7 +54,7 @@ module.exports = class Blockchain {
         let network = env.config.httpUri.indexOf('devnet') ? 'devnet' : 'mainnet';
         return {
             txHash: txReceipt,
-            explorer: `<a href="https://explorer.solana.com/tx/${txReceipt}?cluster=${network}" target="_new" style="text-decoration:underline;">View Transaction Details</a>`
+            explorer: `https://explorer.solana.com/tx/${txReceipt}?cluster=${network}`
         }
     }
 

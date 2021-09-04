@@ -6,7 +6,7 @@ export default class Footer extends Component {
         return (
             <div>
 
-                <footer class="page-footer grey darken-4">
+                <footer class="page-footer" style={{"backgroundColor":"rgba(0,0,0, 0.6)"}}>
                     <div class="container ">
                         <div class="row">
                             <div class="col l6 s12">
