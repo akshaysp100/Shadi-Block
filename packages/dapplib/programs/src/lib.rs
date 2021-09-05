@@ -26,7 +26,8 @@ const DUMMY_CREATED_ON: &str = "0000000000000000"; // milliseconds, 16 digits
 const DUMMY_DATE: &str = "00-00-0000";
 const DUMMY_PLACE: &str = "aaaaaaaaaaaaaaaa";
 pub fn get_init_love_record() -> LoveRecord {
-    LoveRecord{ groom: String::from(DUMMY_TX_ID), bride: String::from(DUMMY_CREATED_ON), date: String::from(DUMMY_DATE), place: String::from(DUMMY_PLACE) }
+    LoveRecord{ groom: String::from(DUMMY_TX_ID), bride: String::from(DUMMY_CREATED_ON),
+        date: String::from(DUMMY_DATE), place: String::from(DUMMY_PLACE) }
 }
 pub fn get_init_love_records() -> Vec<LoveRecord> {
     let mut records = Vec::new();

@@ -39,7 +39,7 @@ export default class BlockChain extends Component {
 
     const ideasits = response ? Array.from(response).reverse().map((love, key) =>
     (
-      <div class="col s18 m18" key={key}>
+      <div class="" key={key}>
         <div class="card #76ff03 white" style={{ borderRadius: "15px" }}>
           <div class="row">
             <div class="col s4">
@@ -92,7 +92,7 @@ export default class BlockChain extends Component {
           </Slide>
           <Slide right cascade>
           <div class="center-align">
-            <div style={{ marginTop: "3rem" }} className="row">
+            <div style={{ marginTop: "3rem" ,"marginLeft":"18rem"}} className="row">
               <div className="col s16">
                 {ideasits}
               </div>
