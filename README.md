@@ -35,11 +35,11 @@ How to run the ShadiBlock Web App:
 
 ![Screenshot from 2021-09-06 13-39-14](https://user-images.githubusercontent.com/42371812/132183138-ff95bb46-4dba-4933-82c6-1ad241deb021.png)
 
-2. Then open a terminsl in that folder and run yarn like this:
+2. Then open a terminal in that folder and run yarn like this:
 
 ![Screenshot from 2021-09-06 13-43-50](https://user-images.githubusercontent.com/42371812/132183697-89e3c75b-e2ae-4f69-bc93-f1fb8b9f9a05.png)
 
-3. Then run yarn start to run to the web app like this:
+3. Then run yarn start to run the web app like this:
 
 ![Screenshot from 2021-09-06 13-44-03](https://user-images.githubusercontent.com/42371812/132183738-911dfce4-b07a-4283-add9-ce54e10d003d.png)
 
