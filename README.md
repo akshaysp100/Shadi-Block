@@ -29,6 +29,25 @@ To access the website you need to run yarn in the folder that contains all the s
 And then run yarn start command to view the web app in the browser
 Then go to localhost:5001 in the browser to view the website
 
+How to run the ShadiBlock Web App:
+
+1. As soon as you clone or download this project the directory structure should look something like this:
+
+![Screenshot from 2021-09-06 13-39-14](https://user-images.githubusercontent.com/42371812/132183138-ff95bb46-4dba-4933-82c6-1ad241deb021.png)
+
+2. Then open a terminsl in that folder and run yarn like this:
+
+![Screenshot from 2021-09-06 13-43-50](https://user-images.githubusercontent.com/42371812/132183697-89e3c75b-e2ae-4f69-bc93-f1fb8b9f9a05.png)
+
+3. Then run yarn start to run to the web app like this:
+
+![Screenshot from 2021-09-06 13-44-03](https://user-images.githubusercontent.com/42371812/132183738-911dfce4-b07a-4283-add9-ce54e10d003d.png)
+
+4. Then you should shift to http://localhost:5001 to view the Web App:
+
+![Screenshot from 2021-09-06 13-45-20](https://user-images.githubusercontent.com/42371812/132183931-12176541-e6df-4dbb-b168-232dc0eea196.png)
+
+
 Screenshots of the Working Web App:
 
 ![Screenshot from 2021-09-04 12-36-16](https://user-images.githubusercontent.com/42371812/132181769-649b2bda-43dd-4b99-99d4-5db3889a4e1a.png)
