@@ -24,3 +24,6 @@ File Structure:
 6. In the packages/client folder all the react components and classes are in src folder
 
 We have used Borsh to serialize and deserialize data in frontend, backend and rust program.
+To access the website you need to run yarn in the folder that contains all the shadiblock files to install all the dependencies
+And then run yarn start command to view the web app in the browser
+Then go to localhost:5001 in the browser to view the website
