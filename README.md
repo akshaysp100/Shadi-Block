@@ -6,7 +6,7 @@ Couples can use it to register their names as a memorable milestone on the block
 
 Important:
 1. You need to have rust, solana-cli and npm to run this properly
-2. It runs properly in any Linus like operating system - preferred os -> Ubuntu
+2. It runs properly in any Linux like operating system - preferred os -> Ubuntu
 3. You need to change to the specific shadiblock directory after cloning or downloading the project
 4. Then run 'yarn' command to install all the dependencies
 5. Then run 'yarn start' to compile the project (takes a bit a time first time)
