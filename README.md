@@ -12,7 +12,8 @@ Important:
 5. Then run 'yarn start' to compile the project (takes a bit a time first time)
 6. Then shift to http://localhost:5001 to see the client view of the project
 
-![Screenshot from 2021-09-04 12-36-16](https://user-images.githubusercontent.com/42371812/132136643-28b81070-b717-4eb3-a362-3a62da3fc1eb.png)
+
+![Screenshot from 2021-09-04 12-36-16](https://user-images.githubusercontent.com/42371812/132181059-4ab18db2-5f78-4f67-b239-1948509df2c5.png)
 
 
 File Structure:
