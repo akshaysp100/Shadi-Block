@@ -28,3 +28,16 @@ We have used Borsh to serialize and deserialize data in frontend, backend and ru
 To access the website you need to run yarn in the folder that contains all the shadiblock files to install all the dependencies
 And then run yarn start command to view the web app in the browser
 Then go to localhost:5001 in the browser to view the website
+
+Screenshots of the Working Web App:
+
+![Screenshot from 2021-09-04 12-36-16](https://user-images.githubusercontent.com/42371812/132181769-649b2bda-43dd-4b99-99d4-5db3889a4e1a.png)
+
+![Screenshot from 2021-09-05 17-26-21](https://user-images.githubusercontent.com/42371812/132181786-01bee144-1a9c-4288-8026-9cbf669923a4.png)
+
+![Screenshot from 2021-09-04 12-36-39](https://user-images.githubusercontent.com/42371812/132181794-67c1d919-b154-4cb5-b827-d2c0bb9c7ad5.png)
+
+![Screenshot from 2021-09-05 17-26-57](https://user-images.githubusercontent.com/42371812/132181828-64198de5-5a1e-4e74-9960-edc248de2cdb.png)
+
+![Screenshot from 2021-09-05 17-27-09](https://user-images.githubusercontent.com/42371812/132181875-c14a66fe-2a75-4080-878f-615400cddfc4.png)
+
